@@ -1,0 +1,57 @@
+<!ELEMENT empresa_camionagem (informacao_geral, informacoes_internas)>
+    <!ELEMENT informacao_geral (nome, empresas, descricao)>
+        <!ELEMENT nome (#PCDATA)>
+        <!ELEMENT empresas (sede, filial+)>
+            <!ELEMENT sede (pais, morada, contactos)>
+                <!ELEMENT pais (#PCDATA)>
+                <!ELEMENT morada (#PCDATA)>
+                <!ELEMENT contactos (telefone, email, fax)>
+                    <!ELEMENT telefone (#PCDATA)>
+                    <!ELEMENT email (#PCDATA)>
+                    <!ELEMENT fax (#PCDATA)>
+            <!ELEMENT filial (pais, morada, contactos)>
+                <!ELEMENT pais (#PCDATA)>
+                <!ELEMENT morada (#PCDATA)>
+                <!ELEMENT contactos (telefone, email, fax)>
+            <!ELEMENT descricao (#PCDATA)>
+    <!ELEMENT informacoes_internas (camioes_empresa, motoristas_empresa, encomendas_empresa, clientes_empresa)>
+        <!ELEMENT camioes_empresa (camiao*)>
+            <!ELEMENT camiao (num_camiao, carga_max, data_inspecao, matricula, km_percorridos)>
+                <!ELEMENT num_camiao (#PCDATA)>
+                <!ELEMENT carga_max (#PCDATA)>
+                <!ELEMENT data_inspecao (#PCDATA)>
+                <!ELEMENT matricula (#PCDATA)>
+                <!ELEMENT km_percorridos (#PCDATA)>
+        <!ELEMENT motoristas_empresa (motorista*)>
+            <!ELEMENT motorista (id_motorista, nome_motorista, encarregado, data_nascimento, num_carta_conducao, iban, mes_ferias)>
+                <!ELEMENT id_motorista (#PCDATA)>
+                <!ELEMENT nome_motorista (#PCDATA)>
+                <!ELEMENT encarregado (#PCDATA)>
+                <!ELEMENT data_nascimento (#PCDATA)>
+                <!ELEMENT num_carta_conducao (#PCDATA)>
+                <!ELEMENT iban (#PCDATA)>
+                <!ELEMENT mes_ferias (#PCDATA)>
+        <!ELEMENT encomendas_empresa (encomenda*)>
+            <!ELEMENT encomenda (num_encomenda, id_cliente, origem, contacto_origem, data_recolha, hora_recolha, peso, volume, destino, contacto_destino, data_entrega, hora_entrega)>
+                <!ELEMENT num_encomenda (#PCDATA)>
+                <!ELEMENT id_cliente (#PCDATA)>
+                <!ELEMENT origem (#PCDATA)>
+                <!ELEMENT contacto_origem (#PCDATA)>
+                <!ELEMENT data_recolha (#PCDATA)>
+                <!ELEMENT hora_recolha (#PCDATA)>
+                <!ELEMENT peso (#PCDATA)>
+                <!ELEMENT volume (#PCDATA)>
+                <!ELEMENT destino (#PCDATA)>
+                <!ELEMENT contacto_destino (#PCDATA)>
+                <!ELEMENT data_entrega (#PCDATA)>
+                <!ELEMENT hora_entrega (#PCDATA)>
+        <!ELEMENT clientes_empresa (cliente*)>
+            <!ELEMENT cliente (id_cliente, nome_cliente, telefone, email, nif)>
+                <!ELEMENT id_cliente (#PCDATA)>
+                <!ELEMENT nome_cliente (#PCDATA)>
+                <!ELEMENT telefone (#PCDATA)>
+                <!ELEMENT email (#PCDATA)>
+                <!ELEMENT nif (#PCDATA)>
+
+
+                

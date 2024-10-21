@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE p2_2 SYSTEM "p2_2.dtd"> 
+<empresa_camionagem>
+	<informacao_geral>
+		<nome>LOD LDA</nome>
+		<empresas>
+			<sede>
+				<pais>Portugal</pais>
+				<morada>24 R. São Patrício Amadora, Lisboa</morada>
+				<contactos>
+					<telefone>212 765 890</telefone>
+					<email>lodpt@otmail.com</email>
+					<fax>212 765 891</fax>
+				</contactos>
+			</sede>
+			
+			<filial>
+				<pais>Espanha</pais>
+				<morada>C. II, 13200, Ciudad Real, Espanha</morada>
+				<contactos>
+					<telefone>617 85 99 06</telefone>
+					<email>lodes@otmail.com</email>
+					<fax>617 85 99 07</fax>
+				</contactos>
+			</filial>
+		</empresas>
+		<descricao>A LOD LDA é uma empresa de transporte rodoviário de cargas que oferece soluções logísticas rápidas e 
+		seguras para diversos setores. Com uma frota moderna e equipe experiente, garantimos eficiência e confiabilidade em 
+		todas as entregas. 
+		Nosso compromisso é proporcionar um serviço de qualidade, sempre buscando a satisfação dos nossos clientes e parceiros.
+		</descricao>
+	</informacao_geral>
+	
+	<informacoes_internas>
+		<camioes_empresa>
+			<camiao>
+				<num_camiao>1</num_camiao>
+				<carga_max>3 toneladas</carga_max>
+				<data_inspecao>07 07 2025</data_inspecao>
+				<matricula>7890-ABC</matricula>
+				<km_percorridos>70 000</km_percorridos>
+			</camiao>
+			
+			<camiao>
+				<num_camiao>2</num_camiao>
+				<carga_max> 10 toneladas</carga_max>
+				<data_inspecao>14 03 2025</data_inspecao>
+				<matricula>45-XX-78</matricula>
+				<km_percorridos> 120 000</km_percorridos>
+			</camiao>
+			
+			<camiao>
+				<num_camiao>3</num_camiao>
+				<carga_max>20 toneladas</carga_max>
+				<data_inspecao> 22 09 2025</data_inspecao>
+				<matricula>12-YY-56</matricula>
+				<km_percorridos> 100 000</km_percorridos>
+			</camiao>
+			
+		</camioes_empresa>
+		<motoristas_empresa>
+			<motorista>
+			<id_motorista>100</id_motorista>
+			<nome_motorista> Carlos García</nome_motorista>
+			<encarregado> João Ferreira </encarregado>
+			<data_nascimento> 20 06 1985</data_nascimento>
+			<num_carta_conducao>98765432-AB6</num_carta_conducao>
+			<iban>ES91 1234 5678 9012 3456 7890</iban>
+			<mes_ferias>junho</mes_ferias>
+			</motorista>
+
+			<motorista>
+			<id_motorista>101</id_motorista>
+			<nome_motorista>João Ferreira</nome_motorista>
+			<encarregado> João Ferreira </encarregado><!--faltava-->
+			<data_nascimento>15 02 1980</data_nascimento>
+			<num_carta_conducao>87654321-XY7</num_carta_conducao>
+			<iban> PT50 1234 5678 9012 3456 7890</iban>
+			<mes_ferias>agosto</mes_ferias>
+			</motorista>
+			
+			<motorista>
+			<id_motorista>102</id_motorista>
+			<nome_motorista>Mariana Santos</nome_motorista>
+			<encarregado> João Ferreira </encarregado> <!--faltava-->
+			<data_nascimento> 03 10 1992</data_nascimento>
+			<num_carta_conducao>12345678-ZZ9</num_carta_conducao>
+			<iban>PT50 9876 5432 1098 7654 3210</iban>
+			<mes_ferias>setembro</mes_ferias>
+			</motorista>
+			
+		</motoristas_empresa>
+		<encomendas_empresa>
+		
+			<encomenda>
+				<num_encomenda>E1</num_encomenda>
+				<id_cliente>C1</id_cliente>
+				<origem>Rua dos Navegantes, 45, 1200-378 Lisboa, Portugal</origem>
+				<contacto_origem>912345678</contacto_origem>
+				<data_recolha>2024-10-01</data_recolha>
+				<hora_recolha>10:30</hora_recolha>
+				<peso>200 kg</peso>
+				<volume>1.5 m³</volume>
+				<destino>Avenida João das Regras, 321, 3000-150 Coimbra, Portugal</destino>
+				<contacto_destino>918765432</contacto_destino>
+				<data_entrega>2024-10-02</data_entrega>
+				<hora_entrega>15:00</hora_entrega>
+			</encomenda>
+			
+			<encomenda>
+				<num_encomenda>E2</num_encomenda>
+				<id_cliente>C2</id_cliente>
+				<origem>Avenida 5 de Outubro, 27, 8000-079 Faro, Portugal</origem>
+				<contacto_origem>913456789</contacto_origem>
+				<data_recolha>2024-10-03</data_recolha>
+				<hora_recolha>14:00</hora_recolha>
+				<peso>150 kg</peso>
+				<volume>1.2 m³</volume>
+				<destino>Rua de Santa Catarina, 210, 4000-447 Porto, Portugal</destino>
+				<contacto_destino>919876543</contacto_destino>
+				<data_entrega>2024-10-04</data_entrega>
+				<hora_entrega>11:00</hora_entrega>
+			</encomenda>
+			
+			<encomenda>
+				<num_encomenda>E3</num_encomenda>
+				<id_cliente>C2</id_cliente><!--faltava-->
+				<origem>Calle de Alcalá, 10, 28014 Madrid, Espanha</origem>
+				<contacto_origem>345678901</contacto_origem>
+				<data_recolha>2024-10-05</data_recolha>
+				<hora_recolha>09:00</hora_recolha>
+				<peso>150 kg</peso>
+				<volume>2.0 m³</volume>
+				<destino>Avenida Diagonal, 250, 08013 Barcelona, Espanha</destino>
+				<contacto_destino>349876543</contacto_destino>
+				<data_entrega>2024-10-06</data_entrega>
+				<hora_entrega>16:00</hora_entrega>
+			</encomenda>
+			
+			<encomenda>
+				<num_encomenda>E4</num_encomenda>
+				<id_cliente>C2</id_cliente><!--faltava-->
+				<origem>Avenida 5 de Outubro, 150, 8000-079 Faro, Portugal</origem>
+				<contacto_origem>912345678</contacto_origem>
+				<data_recolha>2024-10-07</data_recolha>
+				<hora_recolha>13:00</hora_recolha>
+				<peso>85 kg</peso>
+				<volume>1.0 m³</volume>
+				<destino>Rua dos Combatentes da Grande Guerra, 45, 6000-172 Castelo Branco, Portugal</destino>
+				<contacto_destino>917654321</contacto_destino>
+				<data_entrega>2024-10-08</data_entrega>
+				<hora_entrega>12:30</hora_entrega>
+			</encomenda>
+
+			
+		</encomendas_empresa>
+		<clientes_empresa>
+			<cliente>
+				<id_cliente>C1</id_cliente>
+				<nome_cliente>Pedro Almeida</nome_cliente>
+				<telefone>912345678</telefone>
+				<email>pedro.almeida@example.com</email>
+				<nif>123456789</nif>
+			</cliente>
+
+			<cliente>
+				<id_cliente>C2</id_cliente>
+				<nome_cliente>Inês Oliveira</nome_cliente>
+				<telefone>918765432</telefone>
+				<email>ines.oliveira@example.com</email>
+				<nif>987654321</nif>
+			</cliente>
+
+			<cliente>
+				<id_cliente>C3</id_cliente>
+				<nome_cliente>Carmen López</nome_cliente>
+				<telefone>612345678</telefone>
+				<email>carmen.lopez@example.com</email>
+				<nif>234567890</nif>
+			</cliente>
+		
+		</clientes_empresa>
+	</informacoes_internas>
+</empresa_camionagem>
