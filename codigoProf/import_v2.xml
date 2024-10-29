@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<EMP_CAMIONAGEM>
+<tabela_motorista>
+	<motorista>
+		<nome>Zé dos Atrelados Gandas</nome>
+		<morada>R. dos Carrinhos, n21; Lisboa</morada>
+		<tlm>933222111</tlm>
+		<n_carta>B223345678</n_carta>
+		<data_nasc>1972-05-03</data_nasc>
+		<id_motorista>1</id_motorista>
+	</motorista>
+	<motorista>
+		<nome>Zé dos camioes</nome>
+		<morada>R. dos eléctricos, n2; Porto</morada>
+		<tlm>911222333</tlm>
+		<n_carta>A12345678</n_carta>
+		<data_nasc>1982-02-02</data_nasc>
+		<id_motorista>2</id_motorista>
+	</motorista>
+</tabela_motorista>
+<tabela_cliente>
+	<cliente>
+		<nome_cliente>Quinta dos Animais</nome_cliente>
+		<morada_cliente>R. dos Carrinhos, n123; Lisboa</morada_cliente>
+		<tlm>933222111</tlm>
+		<nif>222333444</nif>
+		<id_cliente>11</id_cliente>
+	</cliente>
+</tabela_cliente>
+<tabela_servico>
+	<servico>
+		<id_cliente>234</id_cliente>
+		<id_motorista>1</id_motorista>
+		<data_serv>2017-11-23</data_serv>
+		<morada_origem>R. da origem do serviço, n1, Castelo Branco, Portugal</morada_origem>
+		<morada_destino>Ainda nao sei, n1, Faro, Portugal</morada_destino>
+	</servico>
+</tabela_servico>
+</EMP_CAMIONAGEM>
