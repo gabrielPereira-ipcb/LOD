@@ -1,0 +1,109 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="BD_Camionagem" 
+           elementFormDefault="qualified">
+
+    <xs:element name="BD_Camionagem">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Tabela Contacto -->
+                <xs:element name="tabela_contacto">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="contacto" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nome_do_contacto" type="xs:string" />
+                                        <xs:element name="contacto" type="xs:normalizedString" />
+                                        <xs:element name="tlm" type="xs:string" />
+                                        <xs:element name="obs" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Tabela Música -->
+                <xs:element name="tabela_musica">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="musica" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nome_musica">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="40" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="autor">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:maxLength value="120" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="data" type="xs:date" />
+                                        <xs:element name="cd" type="xs:token" />
+                                        <xs:element name="tipo_musica">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="ROCK" />
+                                                    <xs:enumeration value="COUNTRY" />
+                                                    <xs:enumeration value="JAZZ" />
+                                                    <xs:enumeration value="BLUE" />
+                                                    <xs:enumeration value="PIMBA" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="classificacao">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:totalDigits value="5" />
+                                                    <xs:fractionDigits value="1" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Tabela Nota -->
+                <xs:element name="tabela_nota">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nota" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nome_aluno" type="xs:string" />
+                                        <xs:element name="nota">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer" />
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="data" type="xs:date" />
+                                        <xs:element name="utc" type="xs:string" />
+                                        <xs:element name="idade" type="xs:integer" />
+                                        <xs:element name="classif">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:decimal">
+                                                    <xs:totalDigits value="8" />
+                                                    <xs:fractionDigits value="2" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
